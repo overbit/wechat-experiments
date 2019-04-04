@@ -1,0 +1,9 @@
+<!--pages/map/current.wxml-->
+<text>pages/map/current.wxml</text>
+
+<map id="map"></map>
+
+<view class="mapButton">
+<textarea class="tracking"></textarea>
+<button bindtap="getPosition">Show my position</button>
+</view>
