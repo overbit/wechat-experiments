@@ -7,7 +7,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
   },
   //事件处理函数
   bindViewTap: function() {
@@ -21,8 +21,17 @@ Page({
     })
   },
   goToAbcam: function () {
+    var tempSearchUrl = 'https://www.abcam.cn/';
+
     wx.navigateTo({
-      url: '../web-view/web-view'
+      url: '../web-view/web-view?url=' + tempSearchUrl + '&keywords='
+    })
+  },
+  submitToAbcamSearch: function (e) {
+    var tempSearchUrl = 'https://www.abcam.cn/products';
+    console.log('../web-view/web-view?url=' + tempSearchUrl + '&keywords=' + e.detail.value.searchKeyword);
+    wx.navigateTo({
+      url: '../web-view/web-view?url=' + tempSearchUrl+'&keywords=' + e.detail.value.searchKeyword
     })
   },
   onLoad: function () {

@@ -12,7 +12,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    var searchUrl = options.url + '?keywords=' + options.keywords;
+    console.log(searchUrl);
+    this.setData({ wviewurl: searchUrl });
   },
 
   /**

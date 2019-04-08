@@ -7,13 +7,20 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <view class="div">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <view class="mapButton">
+  <view class="div">
   <button bindtap="goToMap">Show my position</button>
   </view>
-  <view class="mapButton">
+  <view class="div">
   <button bindtap="goToAbcam">Go to pws</button>
+  </view>
+  <view class="div form">
+  <form bindsubmit="submitToAbcamSearch">
+    <input placeholder="e.g. p53 or other" name="searchKeyword"/>
+    <button form-type="submit"> Search for keyword </button>
+  </form>
+  
   </view>
 </view>
