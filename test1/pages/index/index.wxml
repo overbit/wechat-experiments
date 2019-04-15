@@ -1,26 +1,33 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
+<view class="container" style='background=#eeefef'>
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> 
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
-  <view class="div">
+  </view> 
+    <view class="div">
     <text class="user-motto">{{motto}}</text>
-  </view>
+  </view> -->
   <view class="div">
-  <button bindtap="goToMap">Show my position</button>
+    <button bindtap="signup">Sign me up</button>
   </view>
+  
+  <!-- <view class="div">
+  <button bindtap="goToMap">Show my position</button>
+  </view> -->
   <view class="div">
   <button bindtap="goToAbcam">Go to pws</button>
   </view>
-  <view class="div form">
-  <form bindsubmit="submitToAbcamSearch">
-    <input placeholder="e.g. p53 or other" name="searchKeyword"/>
-    <button form-type="submit"> Search for keyword </button>
+  <view class="div">
+  <form bindsubmit="submitToAbcamSearch" class="search">
+    <view class='search_box_button'>
+        <button id="seachBtn" class='button global-icon-search' form-type="submit" value="Submit"></button>
+    </view>
+    <view class='search_box_input clearfix'>    
+      <input type='text' placeholder="e.g. p53 or other" name="searchKeyword" style="padding-right: 0px;"/>
+    </view>
   </form>
-  
   </view>
 </view>

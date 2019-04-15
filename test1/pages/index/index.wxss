@@ -23,7 +23,21 @@
 .mapButton {
   margin-top: 100px;
 }
-.form{
+/* .form{
   margin-top: 20px;
   border:  #aaa 1px solid;
+} */
+
+#seachBtn {
+    background-position: 0.55em 0.9em;
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.search_box_input input, .search_box_input input:focus, .search_box_input input:hover {
+    padding: 0.5em 1.5%;
+    height: 100%;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
 }

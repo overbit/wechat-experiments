@@ -3,12 +3,15 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/map/current",
-    "pages/web-view/web-view"
+    "pages/web-view/web-view",
+    "pages/signup/basic/signup",
+    "pages/signup/profession/signup"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeefef",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   }
 }

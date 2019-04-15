@@ -20,6 +20,11 @@ Page({
       url: '../map/current'
     })
   },
+  signup: function () {
+    wx.navigateTo({
+      url: '../signup/basic/signup'
+    })
+  },
   goToAbcam: function () {
     var tempSearchUrl = 'https://www.abcam.cn/';
 

@@ -1,0 +1,42 @@
+<!--pages/signup/signup.wxml--> 
+
+<view class="signup-container">
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">Allow MP to get your Wechat details      </button>
+    <block wx:else>
+    <view class="header">
+      <text>Hi {{userInfo.nickName}},
+      Welcome to Abcam</text>
+    </view>
+    <view class="subHeader">
+      <text style='font-weight: bold'>3/5  </text>
+      <text>What do you do?</text>
+    </view>
+    <view class="body">
+      <view class="userDetails">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image> 
+        <text id="greedings">Hi {{userProfile.firstName}} {{userProfile.familyName}}</text>
+      </view>
+    </view>
+    <form bindsubmit="submitForm" >
+     <view class="">
+          <view>
+            <text>I'm a </text> 
+            <input type='text' value='{{userProfile.profession.position}}' name="position" style="padding-right: 0px;"/>
+            <text> in </text>
+          </view>
+            <view>
+            <input type='text' value='{{userProfile.profession.location}}' name="location" style="padding-right: 0px;"/>
+            <text> at </text>
+            <input type='text' value='{{userProfile.profession.org}}' name="org" style="padding-right: 0px;"/>
+          </view>
+          <view>
+            <text>and my primary research area is </text> 
+            <input type='text' value='{{userProfile.profession.area}}' name="area" style="padding-right: 0px;"/>
+          </view>
+        <button class="continue-btn" style='margin-top: 100px;' form-type="submit" value="Submit">Continue</button>
+      </view>
+    </form>
+    </block>
+
+</view>
