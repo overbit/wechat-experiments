@@ -30,4 +30,7 @@
     </view>
   </form>
   </view>
+  <view class="div">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">Sign up</button>
+  </view> 
 </view>
