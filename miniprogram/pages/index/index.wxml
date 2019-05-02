@@ -1,0 +1,33 @@
+<view class="overlay_bg">
+    <!-- <view class="page__hd">
+        <view class="page__title">Welcome to the miniprogram</view>
+        <view class="page__desc">Click below to start the signup process</view>
+    </view> -->
+    <view class="page__bd page__bd_spacing filler overlay_bg" style="flex: 1;">
+    </view>
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+
+    <view class="welcome-info page__ft">
+      <view style="padding: 30px; text-align:center">
+          <view class="overlay__title">Welcome to the miniprogram</view>
+          <view class="overlay__desc">Sign up to enjoy all membership benefits</view>
+          <view class="overlay__bd">
+            <view >Why sign up? </view>
+            <view >View members only content, order inquiry, receive news & promotions, submit reviews. receive abpoint rewards and get personalized content.</view>
+          </view>
+      </view>
+        <!-- <button wx:if="{{!hasUserInfo && canIUseUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="normal" type="warn" > Sign up </button> -->
+        <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" size="normal" type="warn" > Sign up </button>
+        <!-- <button class="weui-btn" size="normal" type="warn" >Sign up</button> -->
+        <button class="weui-btn" plain="true" size="normal" type="warn" >Later</button>
+    </view>
+</view>

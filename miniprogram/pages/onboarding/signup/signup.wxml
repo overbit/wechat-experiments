@@ -1,0 +1,29 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Hi {{userInfo.nickName}}</view>
+        <view class="page__desc"></view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+	
+		<view class="">Hi Elaina,</view>
+		<view class="">Welcome to Abcam</view>
+		<view class="">Edit Photo</view>
+		<view class="">Last name</view>
+		<view class="">First name</view>
+		<view class="">Pai</view>
+		<view class="">Elaina</view>
+		<view class="">Professional email address</view>
+		<view class="">elaina.pai@researchsoltions.cn</view>
+		<view class="">You will receive a confirmation email to verify your account.</view>
+		<view class="">I'm a   Job position</view>
+		<view class="">in</view>
+		<view class="">上海</view>
+		<view class="">at   Organization</view>
+		<view class="">and my primary research area is</view>
+		<view class="">Immunology</view>
+		<view class="">+ add research area</view>
+		<view class="">Continue</view>
+		<button class="weui-btn" type="warn"  bindtap="signup">Sign me up</button>
+
+	</view>
+</view>

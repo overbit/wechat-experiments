@@ -1,0 +1,3 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<web-view src="https://mp.weixin.qq.com/mp/homepage?__biz=MTg1MjM1NTk2MA==&hid=2&sn=8929f5c42c0b8c763c5cd63a26deb838&scene=18#wechat_redirect"> </web-view> 

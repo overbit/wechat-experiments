@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/onboarding/welcome/welcome",
+    "pages/onboarding/signup/signup",
+    "pages/home/home"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F4364C",
+    "navigationBarTitleText": "abWeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#F4364C",
+    "borderStyle": "black",
+    "selectedColor": "darkgray",
+    "color": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Distributors"
+     }, {
+      "pagePath": "pages/home/home",
+      "text": "FAQ"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}
