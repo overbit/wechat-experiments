@@ -1,0 +1,15 @@
+<!--pages/pathways/home.wxml-->
+<view class="pattern-bg full-height">
+    <view class="page__hd">
+        <view class="page__title">Pathways</view>
+        <view class="page__desc">Explore pathways related to the product you're interested in</view>
+    </view>
+    <view class="page__bd">
+        <view class="search-form">
+        <form bindsubmit="search">
+            <input class="search-input" name="product" />
+            <button class="weui-btn" plain="true" size="normal" type="warn" form-type="submit" value="Submit">GO</button>
+        </form>
+        </view>
+    </view>
+</view>

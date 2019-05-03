@@ -1,0 +1,11 @@
+<!--pages/pathways/pathways.wxml-->
+
+<view class="pattern-bg full-height">
+    <view class="page__hd">
+        <view class="page__title">STRING</view>
+        <view class="page__desc">Known and Predicted Protein-Protein Interactions</view>
+    </view>
+    <view>
+        <image src="{{pathwayImage}}" />
+    </view>
+</view>

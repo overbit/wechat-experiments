@@ -2,9 +2,13 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/onboarding/welcome/welcome",
-    "pages/onboarding/signup/signup",
-    "pages/home/home"
+    "pages/signup/userdetails/userdetails",
+    "pages/signup/interests/interests",
+    "pages/contactus/distributors/distributors",
+    "pages/home/home",
+    "pages/pathways/home",
+    "pages/pathways/pathways",
+    "pages/faq/faq"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,15 +18,34 @@
   },
   "tabBar": {
     "backgroundColor": "#F4364C",
-    "borderStyle": "black",
-    "selectedColor": "darkgray",
-    "color": "white",
+    "borderStyle": "white",
+    "selectedColor": "white",
+    "color": "black",
     "list": [{
-      "pagePath": "pages/index/index",
-      "text": "Distributors"
-     }, {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/faq/faq",
+        "iconPath": "image/question-circle-regular.png",
+        "selectedIconPath": "image/question-circle-regular-w.png",
+        "text": "FAQ"
+      },
+      {
+      "pagePath": "pages/contactus/distributors/distributors",
+      "iconPath": "image/user-tie-solid.png",
+      "selectedIconPath": "image/user-tie-solid-w.png",
+      "text": "Distributor"
+    }, 
+    {
       "pagePath": "pages/home/home",
-      "text": "FAQ"
+      "iconPath": "image/user-circle-solid.png",
+      "selectedIconPath": "image/user-circle-solid-w.png",
+      "text": "Account"
+    },
+    {
+      "pagePath": "pages/pathways/home",
+      "text": "Pathways"
     }]
   },
   "sitemapLocation": "sitemap.json"

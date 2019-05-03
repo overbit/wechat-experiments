@@ -1,0 +1,5 @@
+/* pages/pathways/pathways.wxss */
+
+image {
+    width: 1000rpx;
+}

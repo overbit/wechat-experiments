@@ -1,0 +1,29 @@
+/* pages/pathways/home.wxss */
+
+.page__hd > view{
+    text-align: center; 
+    padding: 5rpx;
+}
+
+page {
+    background-color: white;
+}
+
+.search-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.search-input {
+    vertical-align: middle;
+    border-radius: 4rpx;
+    transition: border-color .15s ease-in-out;
+    color: #333;
+    background: #fff;
+    padding: .571em .7em;
+    border: 1px solid #919d9d;
+}
+
+.search-submit{
+    margin-top: 40rpx;
+}

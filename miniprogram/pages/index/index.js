@@ -10,6 +10,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUseUserInfo: wx.canIUse('button.open-type.getUserInfo'),
+    showWelcomeSignup: "inherit"
   },
 
   /**
@@ -39,7 +40,12 @@ Page({
           })
         }
       })
-    }
+    };
+
+    this.setData({
+      showWelcomeSignup : "inherit"
+    })
+
   },
 
   /**
@@ -53,7 +59,9 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
-
+    this.setData({
+      showWelcomeSignup : "inherit"
+    })
   },
 
   /**
@@ -90,18 +98,20 @@ Page({
   onShareAppMessage: function () {
 
   },
-
+  
   /**
    * Custom functions
    */
-  signup: function () {
-    wx.navigateTo({
-      url: '../onboarding/signup/signup'
+  hideWelcomeSignup: function (e) {
+    console.log(e)
+    
+    this.setData({
+      showWelcomeSignup : "none"
     })
   },
 
   getUserInfo: function(e) {
-    console.log(e)
+    console.log(this)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,

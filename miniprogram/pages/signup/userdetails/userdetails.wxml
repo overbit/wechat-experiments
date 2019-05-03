@@ -1,7 +1,10 @@
+<!--pages/signup/userdetails/userdetails.wxml-->
+<text>pages/signup/userdetails/userdetails.wxml</text>
+
 <view class="page">
-    <view class="page__hd">
-        <view class="page__title">Hi {{userInfo.nickName}}</view>
-        <view class="page__desc"></view>
+    <view class="page__hd" style="display: table; width:100%;">
+        <view class="page__title userinfo-greedings">Hi {{userInfo.nickName}}</view>
+		<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" ></image>
     </view>
     <view class="page__bd page__bd_spacing">
 	
@@ -22,8 +25,7 @@
 		<view class="">and my primary research area is</view>
 		<view class="">Immunology</view>
 		<view class="">+ add research area</view>
-		<view class="">Continue</view>
-		<button class="weui-btn" type="warn"  bindtap="signup">Sign me up</button>
+		<button class="weui-btn" type="warn"  bindtap="continue">Continue</button>
 
 	</view>
 </view>
